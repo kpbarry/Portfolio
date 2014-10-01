@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Portfolio.Models.HighScore>
+
+@{
+    ViewBag.Title = "Hangman";
+}
+
+<div align="center">
+<h2>Hangman</h2>
+    <img class="border center" src="http://i.imgur.com/Y0t1HAJ.jpg" style="width:550px;height:250px;" />
+    <br />
+    <h3>Description</h3>
+    A simple game where you guess letters until you guess the word or run out of guesses.<br />
+    A word is selected randomly from a list of words (using a random number generator to select the word) and displayed as underscores to the user.
+    <br />
+    <h3>Challenges</h3>
+    Displaying the word as underscores and the correct letters the user guessed was the most difficult part of making this game.
+    <h3>Hangman High Scores</h3>
+        <ol>
+            @foreach (var item in Model)
+            {
+                <li>
+                    @item.Name - @item.Score - @item.DateCreated.Value.ToShortDateString()
+                 </li>
+            }
+        </ol>
+    <h3>Download</h3>
+    <a href="https://github.com/kpbarry/HangMan/blob/master/HangMan/HangMan/bin/Debug/HangMan.exe?raw=true">Download from Github</a>
+    <br />
+    <br />
+    <br />
+    <a href="@Url.Action("Index", "Work")">Back</a>
+</div>

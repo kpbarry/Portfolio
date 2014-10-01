@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "PokerHands";
+}
+
+<div align="center">
+    <h2>PokerHands</h2>
+    <img class="border" src="http://i.imgur.com/jBOoFwu.jpg" style="width:550px;height:250px;"/>
+    <h3>Description</h3>
+    This program deals 5 cards from a shuffled deck of 52 cards.<br />
+    Your hand, and its outcome (Pair, Straight, etc) are displayed in the console.<br />
+    <h3>Technical</h3>
+    There are 2 classes in this program. One for the deck and one for the cards. The cards class is comprised of Rank and Suit enums.<br />
+    The deck class builds a deck using cards from the cards class. Shuffling is done using the <a href="http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle">Fisher Yates</a> shuffle method.
+    <br />
+    <h3>Challenges</h3>
+    The most difficult part of this was trying to figure out the logic for every possible poker hand (Pair, Straight, etc)
+    <h3>Download</h3>
+    <a href="https://github.com/kpbarry/DeckOfCards/blob/master/DeckofCards/DeckofCards/bin/Debug/DeckofCards.exe?raw=true">Download</a>
+    <br />
+    <br />
+    <br />
+    <a href="@Url.Action("Index", "Work")">Back</a>
+</div>

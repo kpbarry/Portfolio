@@ -154,6 +154,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ContactMeForms.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\HighScore.cs">
+      <DependentUpon>HighScores.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HighScores.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HighScores.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HighScores.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HighScores.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HighScores.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HighScores.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -230,6 +248,23 @@
       <DependentUpon>ContactMeForms.edmx</DependentUpon>
       <LastGenOutput>ContactMeForms.cs</LastGenOutput>
     </Content>
+    <EntityDeploy Include="Models\HighScores.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HighScores.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\HighScores.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HighScores.edmx</DependentUpon>
+      <LastGenOutput>HighScores.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\HighScores.edmx.diagram">
+      <DependentUpon>HighScores.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\HighScores.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HighScores.edmx</DependentUpon>
+      <LastGenOutput>HighScores.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -244,6 +279,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -262,6 +298,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Work\Index.cshtml" />
     <Content Include="Views\Contact\ThankYou.cshtml" />
+    <Content Include="Views\Work\Battleship.cshtml" />
+    <Content Include="Views\Work\Hangman.cshtml" />
+    <Content Include="Views\Work\PokerHands.cshtml" />
+    <Content Include="Views\Work\Trivia.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

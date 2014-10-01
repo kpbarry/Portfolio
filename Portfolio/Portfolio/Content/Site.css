@@ -1,7 +1,9 @@
 ﻿body {
+    margin:0px;
+    padding:0px;
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
-    color:#2CC1C1;
+    color:#388989;
     background-color: black;
 }
 
@@ -18,7 +20,7 @@ header{
     display: block;
     background-color:#006767;
     color:#2CC1C9;
-    margin-bottom:15px;
+    margin:0 0 10px 0;
 }
 
 
@@ -102,8 +104,9 @@ footer {
 nav {
     text-align:center;
 }
-div.aboutme{
+.aboutme{
     border: 3px solid;
+    color:#2CC1C9;
     border-color:#007575;
     background-color:#006767;
     border-style:outset;
@@ -115,6 +118,7 @@ div.aboutme{
 }
 div.work{
     border: 3px solid;
+    color:#2CC1C9;
     border-color:#007575;
     background-color:#006767;
     border-style:outset;
@@ -125,6 +129,7 @@ div.work{
 }
 div.contactme{
     border: 3px;
+    color:#2CC1C9;
     border-color:#007575;
     background-color: #006767;
     border-style:outset;
@@ -135,29 +140,14 @@ div.contactme{
     text-align:center;
 }
 
-img.topright{
+.border{
     border: 2px solid;
     border-style:outset;
     border-color:#007575;
-    float:right 50px;
 }
-img.topleft{
-    border: 2px solid;
-    border-color:#007575;
-    border-style:outset;
-    float:left 50px;
-}
-img.bottomright{
-    border: 2px solid;
-    border-color:#007575;
-    border-style:outset;
-    float:right 50px;
-}
-img.bottomleft{     
-    border: 2px solid;
-    border-color:#007575;
-    border-style:outset;
-    float:left 50px;
+
+.center{
+    text-align:center;
 }
 
 .left {
@@ -211,9 +201,25 @@ nav a:hover {
 }
 
 .aboutabout{
+    color:#2CC1C9;
     border:3px solid;
     border-color:#007575;
     background-color:#006767;
     border-style:outset;
 }
+.hide{
+    display:none;
+}
 
+.active{
+    display:inline-block;
+}
+
+.top {
+    display: inline-block;
+}
+
+.carousel-next{
+    cursor:pointer;
+    text-decoration:underline;
+}

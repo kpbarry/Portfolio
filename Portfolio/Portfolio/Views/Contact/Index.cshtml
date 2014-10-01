@@ -4,21 +4,23 @@
     ViewBag.Title = "Contact Me";
 }
 
-<h2>Contact Form</h2>
+
 <form action="@Url.Action("Index", "Contact")" method ="post">
+<div align="center">
+    <h2>Contact Form</h2>
 <div class="name">
-    First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name
     @Html.TextBoxFor(x => x.FirstName)
-    @Html.ValidationMessageFor(x => x.FirstName)
+    @Html.ValidationMessageFor(x => x.FirstName)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 <div class="name">
-    Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Last Name
     @Html.TextBoxFor(x => x.LastName)
     @Html.ValidationMessageFor(x => x.LastName)
 </div>
 <br />
 <div class="contact">
-    @Html.LabelFor(x => x.Email) Address
+    &nbsp;@Html.LabelFor(x => x.Email) Address
     @Html.TextBoxFor(x => x.Email)
     @Html.ValidationMessageFor(x => x.Email)
 </div>
@@ -33,6 +35,7 @@
     @Html.ValidationMessageFor(x => x.Comment)
 </div>
     <input type="submit" value="Submit" />
+    </div>
 </form>
 
 @section Scripts {

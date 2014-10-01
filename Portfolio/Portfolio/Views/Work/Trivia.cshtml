@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Portfolio.Models.HighScore>
+@{
+    ViewBag.Title = "Trivia";
+}
+<div align="center">
+    <h2 align="center">Trivia</h2>
+    <img class="border" src="http://i.imgur.com/5wMap62.jpg" style="width:550px;height:250px;"/>
+    <br />
+    <h3>Description</h3>
+    A simple game that prints out questions for the user to answer.<br />
+    The user is asked to input their answer.
+    <h3>Technical</h3>
+    A question is selected randomly from a text file of questions and answers separated by a *.<br />
+    The text file is read in and separated into 2 lists of questions and answers by splitting on the *.<br />
+    The user's input is taken in and converted to lowercase to see if it matches the corresponding answer to the question.
+    <h3>Challenges</h3>
+    The most difficult thing about this game was attempting to make it so it accepts answers that are similar. <br />
+    This has not been implemented, and the user has to type the answer in exactly correct save for capitalization.
+    <h3>Trivia High Scores</h3>
+            @foreach (var item in Model)
+            {
+                <li>
+                    @item.Name - @item.Score - @item.DateCreated.Value.ToShortDateString()
+                </li>
+            }
+    <a href="https://github.com/kpbarry/TriviaGame/tree/master/TriviaGame">Github Repo</a>
+    <br />
+    <br />
+    <br />
+    <a href="@Url.Action("Index", "Work")">Back</a>
+</div>
