@@ -47,7 +47,6 @@ namespace Portfolio.Controllers
             sb.AppendLine("Name: " + contact.FirstName + " " + contact.LastName);
             sb.AppendLine("My number is: " + contact.ContactNumber);
             sb.AppendLine("Message: " + contact.Comment);
-            sb.AppendLine("I love you.");
             //Step 5. Set body = sb.ToString()
             message.Body = sb.ToString();
 

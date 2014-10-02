@@ -24,11 +24,15 @@
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
     <footer>
-        <div>
+        <div align="left">
             © 2014 Kevin Barry 
-        </div>
-        <div>
-            <a href="@Url.Action("Index", "Home")">Home</a> | <a href="@Url.Action("Index", "About")">About</a> | <a href="@Url.Action("Index", "Work")">Work</a> | <a href="@Url.Action("Index", "Contact")">Contact</a>
+            <a href="@Url.Action("Index", "Contact")" class="right">Contact</a>&nbsp;
+            <a href="@Url.Action("Index", "Work")" class="right">Work | </a>&nbsp;
+            <a href="@Url.Action("Index", "About")" class="right">About |</a>  &nbsp;
+            <a href="@Url.Action("Index", "Home")" class="right">Home | </a> &nbsp;
+            
+            
+            
         </div>
     </footer>
 </body>

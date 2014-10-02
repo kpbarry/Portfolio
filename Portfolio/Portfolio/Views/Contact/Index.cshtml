@@ -6,36 +6,38 @@
 
 
 <form action="@Url.Action("Index", "Contact")" method ="post">
-<div align="center">
-    <h2>Contact Form</h2>
-<div class="name">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name
-    @Html.TextBoxFor(x => x.FirstName)
-    @Html.ValidationMessageFor(x => x.FirstName)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</div>
-<div class="name">
-    Last Name
-    @Html.TextBoxFor(x => x.LastName)
+<h2 align="center"> Contact Form</h2>
+<p align="center">
+    @Html.ValidationMessageFor(x => x.FirstName)
     @Html.ValidationMessageFor(x => x.LastName)
-</div>
-<br />
-<div class="contact">
-    &nbsp;@Html.LabelFor(x => x.Email) Address
-    @Html.TextBoxFor(x => x.Email)
-    @Html.ValidationMessageFor(x => x.Email)
-</div>
-<div class="contact">
-    Contact Number
-    @Html.TextBoxFor(x => x.ContactNumber)
-    @Html.ValidationMessageFor(x => x.ContactNumber)
-</div>
-<div>
-    @Html.LabelFor(x => x.Comment)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    @Html.TextAreaFor(x => x.Comment)
-    @Html.ValidationMessageFor(x => x.Comment)
-</div>
-    <input type="submit" value="Submit" />
-    </div>
+</p>
+<p align="center">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name
+    @Html.TextBoxFor(x => x.FirstName)
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name
+    @Html.TextBoxFor(x => x.LastName)  
+</p>
+ <p align="center">
+        @Html.ValidationMessageFor(x => x.Email)
+        @Html.ValidationMessageFor(x => x.ContactNumber)
+</p>
+    <p align="center">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email Address
+        @Html.TextBoxFor(x => x.Email)
+        Contact Number
+        @Html.TextBoxFor(x => x.ContactNumber)
+
+    </p>
+    <p align="center">
+        @Html.ValidationMessageFor(x => x.Comment)
+        </p>
+<p align="center">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comment
+        @Html.TextAreaFor(x => x.Comment) 
+    </p>
+    <p align="center">
+        <input type="submit" value="Submit" />
+        </p>
 </form>
 
 @section Scripts {
