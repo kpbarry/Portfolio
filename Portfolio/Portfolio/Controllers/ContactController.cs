@@ -45,6 +45,7 @@ namespace Portfolio.Controllers
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("You have a new contact request.");
             sb.AppendLine("Name: " + contact.FirstName + " " + contact.LastName);
+
             sb.AppendLine("My number is: " + contact.ContactNumber);
             sb.AppendLine("Message: " + contact.Comment);
             //Step 5. Set body = sb.ToString()
@@ -56,12 +57,7 @@ namespace Portfolio.Controllers
             //Step 7. Send the message
             client.Send(message);
             //Done, kick the user to the ThankYou page
-            return RedirectToAction("ThankYou", "Contact");
-        }
-
-        public ActionResult ThankYou()
-        {
-            return View();
+            return PartialView("ThankYou");
         }
     }
 }

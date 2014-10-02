@@ -297,11 +297,11 @@
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Work\Index.cshtml" />
-    <Content Include="Views\Contact\ThankYou.cshtml" />
     <Content Include="Views\Work\Battleship.cshtml" />
     <Content Include="Views\Work\Hangman.cshtml" />
     <Content Include="Views\Work\PokerHands.cshtml" />
     <Content Include="Views\Work\Trivia.cshtml" />
+    <Content Include="Views\Contact\ThankYou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

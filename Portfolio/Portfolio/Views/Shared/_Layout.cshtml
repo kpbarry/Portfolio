@@ -19,18 +19,25 @@
             <a href="@Url.Action("Index", "Contact")">Contact</a>
         </nav>
     </header>
-    @RenderBody()
+    <div id="body">
+            @RenderSection("featured", required: false)
+            <section id="container" class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
     <footer>
         <div align="left">
-            © 2014 Kevin Barry 
-            <a href="@Url.Action("Index", "Contact")" class="right">Contact</a>&nbsp;
-            <a href="@Url.Action("Index", "Work")" class="right">Work | </a>&nbsp;
-            <a href="@Url.Action("Index", "About")" class="right">About |</a>  &nbsp;
-            <a href="@Url.Action("Index", "Home")" class="right">Home | </a> &nbsp;
             
+            <ul>
+                <li class="left">© 2014 Kevin Barry</li>
+            <a href="@Url.Action("Index", "Contact")" class="right"><li>Contact</li></a>
+            <a href="@Url.Action("Index", "Work")" class="right"><li>Work</li> </a>
+            <a href="@Url.Action("Index", "About")" class="right"><li>About</li></a>  
+            <a href="@Url.Action("Index", "Home")" class="right"><li>Home</li> </a>
+            </ul>
             
             
         </div>

@@ -5,7 +5,7 @@
 }
 
 
-<form action="@Url.Action("Index", "Contact")" method ="post">
+<form id="contactForm" action="@Url.Action("Index", "Contact")" method ="post">
 <h2 align="center"> Contact Form</h2>
 <p align="center">
     @Html.ValidationMessageFor(x => x.FirstName)
@@ -32,7 +32,7 @@
         @Html.ValidationMessageFor(x => x.Comment)
         </p>
 <p align="center">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comment
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comment&nbsp;
         @Html.TextAreaFor(x => x.Comment) 
     </p>
     <p align="center">
