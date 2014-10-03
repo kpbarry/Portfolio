@@ -11,6 +11,11 @@ footer, section {
     display: block;
 }
 
+h1{
+    padding: 0px;
+    margin: 0px;
+}
+
 nav {
     display:block;
 }
@@ -38,7 +43,7 @@ legend {
 }
 
 textarea {
-    resize:none;
+    resize: none;
     min-height: 75px;
     resize: none;
     width: 453px;
@@ -110,7 +115,9 @@ nav {
     left: 7.5%;
     display: inline-block;
     text-align:center;
+    height:140px;
 }
+
 div.work{
     border: 3px solid;
     color:#2CC1C9;
@@ -121,12 +128,12 @@ div.work{
     display: inline-block;
     text-align:center;
     position: relative;
-    left:20%;
-    margin-left: -125px;
-
+    left:12.5%;
+    height:140px;
 }
 div.contactme{
     border: 3px;
+    height:140px;
     width:25%;
     color:#2CC1C9;
     border-color:#007575;
@@ -173,12 +180,8 @@ li{
 }
 
 nav a {
-    -moz-transition-duration: 0.5s;
       -webkit-transition-duration: 0.5s;
       -o-transition-duration: 0.5s;
-
-      -moz-box-shadow: 0px 0px 1px black;
-      -wekit-box-shadow: 0px 0px 1px black;
       box-shadow: 0px 0px 1px black;
       
       padding: 0 25px;
@@ -190,8 +193,8 @@ nav a {
       
       color: #FFF;
       background: #2CC1C1;
-      background: -moz-linear-gradient(-90deg, rgba(0,0,0,0), rgba(0,0,0,0.5)), #fff;
       background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.5))), #2CC1C1;
+      background-image: -ms-linear-gradient(top, #2CC1C1 0%, #000000 120%);
       border-left: 1px solid rgba(255,255,255,0.2);
       border-right: 1px solid rgba(0,0,0,0.2);
 }
@@ -204,6 +207,8 @@ nav a:hover {
       text-shadow: 0px 0px 1px rgba(255,255,255,0.8);
       background: #777;
       background: -moz-linear-gradient(-90deg, rgba(0,0,0,0), rgba(0,0,0,0.5)), #1c8e9a;
+      
+      background-image: -ms-linear-gradient(top, #229696 0%, #000000 120%);
       background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.5))), #1c8e9a;
 }
 
@@ -214,8 +219,32 @@ nav a:hover {
     background-color:#006767;
     border-style:outset;
 }
+.github{
+    border-color:#006767;
+    border-radius: 5px 5px 5px 5px;
+}
 .hide{
     display:none;
+}
+
+.leftleft {
+    position: absolute;
+    left: 12.5%;
+}
+
+.leftmid {
+    position: absolute;
+    left: 37.5%;
+}
+
+.rightmid {
+    position:absolute;
+    right: 37.5%;
+}
+
+.rightright {
+    position:absolute;
+    right: 12.5%;
 }
 
 .active{
@@ -224,6 +253,7 @@ nav a:hover {
 
 .top {
     display: inline-block;
+    text-align:center;
 }
 
 .carousel-next{
