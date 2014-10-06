@@ -14,15 +14,6 @@ footer, section {
 html, body {
 	height: 100%;
 }
-.wrapper {
-	min-height: 100%;
-	height: 100%;
-	margin: 0 auto -155px;
-}
-
-footer, .push {
-	height: 155px;
-}
 
 h1{
     padding: 0px;
@@ -270,17 +261,57 @@ nav a:hover {
     text-align:center;
 }
 
-.carousel-next{
-    cursor:pointer;
-    border:solid 2px white;
-    border-width:50%;
+.carousel-next {
+vertical-align: middle;
+display:inline-block;
+line-height: 30px;
+height: 30px;
+width: 30px;   
+background-color:#007575;
+color: #FFFFFF;
+font-family: Verdana, Arial, Sans-Serif;
+cursor:pointer;
+font-weight:bold;
+}
+
+    .carousel-next:hover {
     color:#2CC1C9;
-    border-color:#007575;
-    border-style:outset;
-    background-color:#007575;
-    text-align:center;
+    }
+
+.carousel-prev {
+vertical-align: middle;
+display:inline-block;
+line-height: 30px;
+height: 30px;
+width: 30px; 
+background-color:#007575;
+color: #FFFFFF;
+font-family: Verdana, Arial, Sans-Serif;
+cursor:pointer;
+font-weight:bold;
+}
+
+.carousel-prev:hover {
+    color:#2CC1C9;
 }
 
 .borderstyle{
     border:dashed 2px white;
+}
+
+.workDiv {
+    text-align: center;
+    width: 45%;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 1px;
+}
+
+.workButton{
+    display:inline-block;
 }

@@ -1,15 +1,27 @@
-﻿@{
+﻿@model IEnumerable<Portfolio.Models.HighScore>
+
+@{
     ViewBag.Title = "Battleship";
 }
 
 <h1 align="center">Battleship</h1>
 <div class="borderstyle" style="text-align: center; float: right; display: inline-block; width: 55%;">
-        <h3>Challenges</h3>
-        This was one of the more difficult programs to create.
+    <h3>Description</h3>
+    In this game, the player competes against the computer to try to destroy all the opponent's ships first. The player can input a set of X, Y coordinates for their guess. If they hit a ship, the point will turn red, otherwise it will be green.
+     <h3>Challenges</h3>
+    This was one of the more difficult programs to create because there are a lot of elements to consider. <br />
+    See the technical section for more info.
         <h3>Technical</h3>
-
-        <h3>Battleship High Scores</h3>
-        <a href="https://github.com/kpbarry/BattleShip-Kevin/blob/master/BattleShip/bin/Debug/BattleShip.exe?raw=true">Download</a>
+       <ul>
+           <li><h3>Classes:</h3></li>
+           <li><strong>Player:</strong> Contains the player's name and type (for AI)</li>
+    <li> <strong>Ship:</strong> 5 different types of ships and their attributes</li>
+    <li> <strong>Point:</strong> A grid is made up of 100 points. Points contain the status for whether or not there is a ship there, and if the ship is hit or not.</li>
+    <li><strong>Grid:</strong> 2 dimensional array of points. Contains the logic for whether a not a ship can be placed in the grid, as well as the logic for placing ships randomly.</li>  
+    <li><strong>Bot:</strong> AI logic for playing against a player. The computer will guess randomly until it hits a point, at which point it will guess in all directions around the hit point.</li>    
+       </ul>
+        <h3>Download</h3>
+        <a href="https://github.com/kpbarry/BattleShip-Kevin/blob/master/BattleShip/bin/Debug/BattleShip.exe?raw=true">Download from Github</a>
         <br />
         <br />
         <br />
